@@ -1,7 +1,9 @@
 name: deploy
 
 on:
-  push
+  push:
+    branches:
+      - v2.2.3
 
 jobs:
   docker:
