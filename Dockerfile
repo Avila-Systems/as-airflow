@@ -5,7 +5,6 @@ RUN apt-get update
 RUN apt-get install -y wget
 
 USER airflow
-RUN pip install --no-cache-dir as-scraper
 
 ARG GECKODRIVER_VERSION=v0.30.0
 ARG FILENAME=geckodriver-${GECKODRIVER_VERSION}-linux64.tar.gz
