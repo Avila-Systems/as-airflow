@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - v2.2.3
+      - v2.3.0
 
 jobs:
   docker:
@@ -22,4 +23,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: almiavicas/as-airflow:2.2.3
+          tags: almiavicas/as-airflow:2.3.0
